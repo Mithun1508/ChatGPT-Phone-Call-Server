@@ -1,0 +1,250 @@
+Metadata-Version: 2.1
+Name: vocode
+Version: 0.1.65
+Summary: The all-in-one voice SDK
+Home-page: https://github.com/vocodedev/vocode-python
+License: MIT
+Author: Ajay Raj
+Author-email: ajay@vocode.dev
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: io
+Requires-Dist: aiohttp (==3.8.4)
+Requires-Dist: aiosignal (==1.3.1)
+Requires-Dist: anyio (==3.6.2)
+Requires-Dist: async-timeout (==4.0.2)
+Requires-Dist: attrs (==22.2.0)
+Requires-Dist: azure-cognitiveservices-speech (==1.25.0)
+Requires-Dist: cachetools (==5.3.0)
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: cffi (==1.15.1)
+Requires-Dist: charset-normalizer (==3.0.1)
+Requires-Dist: click (==8.1.3)
+Requires-Dist: dataclasses-json (==0.5.7)
+Requires-Dist: decorator (==5.1.1)
+Requires-Dist: fastapi (==0.92.0)
+Requires-Dist: frozenlist (==1.3.3)
+Requires-Dist: google-api-core (==2.11.0)
+Requires-Dist: google-auth (==2.16.3)
+Requires-Dist: google-cloud-speech (==2.17.3)
+Requires-Dist: google-cloud-texttospeech (==2.14.1)
+Requires-Dist: googleapis-common-protos (==1.59.0)
+Requires-Dist: grpcio (==1.51.3)
+Requires-Dist: grpcio-status (==1.51.3)
+Requires-Dist: h11 (==0.14.0)
+Requires-Dist: idna (==3.4)
+Requires-Dist: jinja2 (==3.1.2)
+Requires-Dist: joblib (==1.2.0)
+Requires-Dist: langchain (==0.0.117)
+Requires-Dist: markupsafe (==2.1.2)
+Requires-Dist: marshmallow (==3.19.0)
+Requires-Dist: marshmallow-enum (==1.5.1)
+Requires-Dist: mccabe (==0.7.0)
+Requires-Dist: multidict (==6.0.4)
+Requires-Dist: mypy-extensions (==1.0.0)
+Requires-Dist: nltk (==3.8.1)
+Requires-Dist: numpy (==1.24.2)
+Requires-Dist: openai (==0.27.2)
+Requires-Dist: packaging (==23.0)
+Requires-Dist: pathspec (==0.11.0)
+Requires-Dist: platformdirs (==3.1.0)
+Requires-Dist: ply (==3.11)
+Requires-Dist: proto-plus (==1.22.2)
+Requires-Dist: protobuf (==4.22.1)
+Requires-Dist: pyasn1 (==0.4.8)
+Requires-Dist: pyasn1-modules (==0.2.8)
+Requires-Dist: pyaudio (==0.2.13) ; extra == "io"
+Requires-Dist: pycodestyle (==2.10.0)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: pydantic (>=1.9.0)
+Requires-Dist: pydub (==0.25.1) ; extra == "io"
+Requires-Dist: pyflakes (>=2.5.0)
+Requires-Dist: pyjwt (==2.6.0)
+Requires-Dist: python-dotenv (==0.21.1)
+Requires-Dist: python-multipart (==0.0.6)
+Requires-Dist: pytz (==2022.7.1)
+Requires-Dist: pyyaml (==6.0)
+Requires-Dist: redis (==4.5.3)
+Requires-Dist: regex (==2023.3.23)
+Requires-Dist: requests (==2.28.2)
+Requires-Dist: rsa (==4.9)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: sniffio (==1.3.0)
+Requires-Dist: sounddevice (==0.4.6) ; extra == "io"
+Requires-Dist: sqlalchemy (==1.4.47)
+Requires-Dist: starlette (==0.25.0)
+Requires-Dist: tenacity (==8.2.2)
+Requires-Dist: tomli (==2.0.1)
+Requires-Dist: tqdm (==4.65.0)
+Requires-Dist: twilio (==7.17.0)
+Requires-Dist: typing-extensions (>=3.10.0.2)
+Requires-Dist: typing-inspect (==0.8.0)
+Requires-Dist: urllib3 (==1.26.14)
+Requires-Dist: uvicorn (==0.20.0)
+Requires-Dist: websockets (==10.4)
+Requires-Dist: yarl (==1.8.2)
+Description-Content-Type: text/markdown
+
+<div align="center">
+
+![Hero](https://user-images.githubusercontent.com/6234599/228337850-e32bb01d-3701-47ef-a433-3221c9e0e56e.png)
+
+    
+[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/vocodehq.svg?style=social&label=Follow%20%40vocodehq)](https://twitter.com/vocodehq) [![GitHub Repo stars](https://img.shields.io/github/stars/vocodedev/vocode-python?style=social)](https://github.com/vocodedev/vocode-python)
+
+[Community](https://discord.gg/NaU4mMgcnC) | [Docs](https://docs.vocode.dev) | [Dashboard](https://app.vocode.dev)
+</div>
+
+# <span><img style='vertical-align:middle; display:inline;' src="https://user-images.githubusercontent.com/6234599/228339858-95a0873a-2d40-4542-963a-6358d19086f5.svg"  width="5%" height="5%">vocode</span>
+
+### **Build voice-based LLM apps in minutes**
+
+Vocode is an open source library that makes it easy to build voice-based LLM apps. Using Vocode, you can build real-time streaming conversations with LLMs and deploy them to phone calls, Zoom meetings, and more. You can also build personal assistants or apps like voice-based chess. Vocode provides easy abstractions and integrations so that everything you need is in a single library.
+
+# ⭐️ Features
+- 🗣 [Spin up a conversation with your system audio](https://docs.vocode.dev/python-quickstart)
+- ➡️ 📞 [Set up a phone number that responds with a LLM-based agent](https://docs.vocode.dev/telephony#inbound-calls)
+- 📞 ➡️ [Send out phone calls from your phone number managed by an LLM-based agent](https://docs.vocode.dev/telephony#outbound-calls)
+- 🧑‍💻 [Dial into a Zoom call](https://github.com/vocodedev/vocode-python/blob/main/vocode/streaming/telephony/hosted/zoom_dial_in.py)
+- Out of the box integrations with:
+  - Transcription services, including:
+    - [Deepgram](https://deepgram.com/)
+    - [AssemblyAI](https://www.assemblyai.com/)
+    - [Google Cloud](https://cloud.google.com/speech-to-text)
+    - [Whisper](https://openai.com/blog/introducing-chatgpt-and-whisper-apis)
+  - LLMs, including:
+    - [ChatGPT](https://openai.com/blog/chatgpt)
+    - [GPT-4](https://platform.openai.com/docs/models/gpt-4)
+    - [Anthropic](https://www.anthropic.com/) - coming soon!
+  - Synthesis services, including:
+    - [Microsoft Azure](https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/)
+    - [Google Cloud](https://cloud.google.com/text-to-speech)
+    - [Eleven Labs](https://elevenlabs.io/) 
+
+Check out our React SDK [here](https://github.com/vocodedev/vocode-react-sdk)! 
+
+# 🚀 Quickstart (Self-hosted)
+
+```bash
+pip install 'vocode[io]'
+```
+
+```python
+import asyncio
+import signal
+
+import vocode
+from vocode.streaming.streaming_conversation import StreamingConversation
+from vocode.helpers import create_microphone_input_and_speaker_output
+from vocode.streaming.models.transcriber import (
+    DeepgramTranscriberConfig,
+    PunctuationEndpointingConfig,
+)
+from vocode.streaming.models.agent import ChatGPTAgentConfig
+from vocode.streaming.models.message import BaseMessage
+from vocode.streaming.models.synthesizer import AzureSynthesizerConfig
+
+# these can also be set as environment variables
+vocode.setenv(
+    OPENAI_API_KEY="<your OpenAI key>",
+    DEEPGRAM_API_KEY="<your Deepgram key>",
+    AZURE_SPEECH_KEY="<your Azure key>",
+    AZURE_SPEECH_REGION="<your Azure region>",
+)
+
+
+async def main():
+    microphone_input, speaker_output = create_microphone_input_and_speaker_output(
+        streaming=True, use_default_devices=False
+    )
+
+    conversation = StreamingConversation(
+        output_device=speaker_output,
+        transcriber_config=DeepgramTranscriberConfig.from_input_device(
+            microphone_input, endpointing_config=PunctuationEndpointingConfig()
+        ),
+        agent_config=ChatGPTAgentConfig(
+            initial_message=BaseMessage(text="Hello!"),
+            prompt_preamble="Have a pleasant conversation about life",
+        ),
+        synthesizer_config=AzureSynthesizerConfig.from_output_device(speaker_output),
+    )
+    await conversation.start()
+    print("Conversation started, press Ctrl+C to end")
+    signal.signal(signal.SIGINT, lambda _0, _1: conversation.terminate())
+    while conversation.is_active():
+        chunk = microphone_input.get_audio()
+        if chunk:
+            conversation.receive_audio(chunk)
+        await asyncio.sleep(0)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+# ☁️ Quickstart (Hosted)
+
+First, get a *free* API key from our [dashboard](https://app.vocode.dev).
+
+```bash
+pip install 'vocode[io]'
+```
+
+```python
+import asyncio
+import signal
+
+import vocode
+from vocode.streaming.hosted_streaming_conversation import HostedStreamingConversation
+from vocode.streaming.streaming_conversation import StreamingConversation
+from vocode.helpers import create_microphone_input_and_speaker_output
+from vocode.streaming.models.transcriber import (
+    DeepgramTranscriberConfig,
+    PunctuationEndpointingConfig,
+)
+from vocode.streaming.models.agent import ChatGPTAgentConfig
+from vocode.streaming.models.message import BaseMessage
+from vocode.streaming.models.synthesizer import AzureSynthesizerConfig
+
+vocode.api_key = "<your API key>"
+
+
+if __name__ == "__main__":
+    microphone_input, speaker_output = create_microphone_input_and_speaker_output(
+        streaming=True, use_default_devices=False
+    )
+
+    conversation = HostedStreamingConversation(
+        input_device=microphone_input,
+        output_device=speaker_output,
+        transcriber_config=DeepgramTranscriberConfig.from_input_device(
+            microphone_input,
+            endpointing_config=PunctuationEndpointingConfig(),
+        ),
+        agent_config=ChatGPTAgentConfig(
+            initial_message=BaseMessage(text="Hello!"),
+            prompt_preamble="Have a pleasant conversation about life",
+        ),
+        synthesizer_config=AzureSynthesizerConfig.from_output_device(speaker_output),
+    )
+    signal.signal(signal.SIGINT, lambda _0, _1: conversation.deactivate())
+    asyncio.run(conversation.start())
+```
+
+# 📞 Phone call quickstarts
+
+- [Inbound calls - Hosted](https://docs.vocode.dev/telephony#inbound-calls)
+- [Outbound calls - Hosted](https://docs.vocode.dev/telephony#outbound-calls)
+- [Telephony Server - Self-hosted](https://github.com/vocodedev/vocode-python/blob/main/examples/telephony_app.py)
+
+
+
+# 🌱 Documentation
+
+[docs.vocode.dev](https://docs.vocode.dev/)
+
